@@ -1,6 +1,7 @@
 # Gambling Simulator
 
-Play [Here]()
+Play [Here](https://chunkymonkey00.github.io/botGambleSim/)  
+  
 Welcome to the Gambling Simulator! This project simulates a gambling scenario where bots compete to earn the most money through gambling. You can adjust various settings and start the simulation to see which bot comes out on top!
 
 ## Features
