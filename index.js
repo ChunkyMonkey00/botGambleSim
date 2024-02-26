@@ -3,9 +3,9 @@
 when they gamble they each do a different %.*/
 
 // Default values
-var xxChance = 40;
-var xxxChance = 15;
-var freq = 10;
+var xxChance = 50;
+var xxxChance = 20;
+var freq = 20;
 var payCheck = 10;
 var isRunning = false;
 var inter;
