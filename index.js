@@ -75,7 +75,7 @@ function earnMoney(who) {
 var day = 0;
 
 function runSimulation() {
-
+  day = 0;
   for(var i =0;i<bots.length;i++) {
     bots[i][0] = 0;
   }
@@ -112,7 +112,7 @@ function clearGame() {
 
   clearInterval(inter);
 
-  days = 0;
+  day = 0;
 }
 
 // Start or stop simulation
