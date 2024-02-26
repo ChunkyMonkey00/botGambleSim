@@ -48,7 +48,7 @@ function addBot(p) {
 }
 
 function gamble(money) {
-  let rnd = Math.floor(Math.random() * 100);
+  let rnd = Math.random() * 100;
   if(rnd >= xxChance && rnd < xxxChance) {
     return 2;
   }
@@ -62,7 +62,7 @@ function botGamble(who) {
   let money = bots[who][0];
   let percent = bots[who][1];
 
-  let moneyCalc = Math.floor((percent / 100) * money);
+  let moneyCalc = Math.floor(percent / 100) * money);
   
   bots[who][0] -= moneyCalc;
   let turn = gamble(moneyCalc);
