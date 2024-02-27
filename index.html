@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gambling Simulator</title>
+	<title>Bot Simulator</title>
 	<style>
 		body {
 			font-family: Arial, sans-serif;
@@ -34,81 +34,82 @@
 			font-size: 18px;
 		}
 
-	/* Your CSS styles here */
-	.side-menu {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #111;
-	overflow-x: hidden;
-	transition: 0.5s;
-	padding-top: 60px;
-	}
-	
-  .centerThis {
-	text-align: center;
-  }
+		/* Your CSS styles here */
+		.side-menu {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 60px;
+		}
 
-	.side-menu .menu-content {
-	padding: 16px;
-  color:white;
-	}
-	
-	.main-content {
-	transition: margin-left 0.5s;
-	padding: 16px;
-	}
-	
-	.toggle-button {
-	font-size: 20px;
-	margin-top: 0px;
-	margin-left: 0px;
-	background-color: #111;
-	border: none;
-	color: white;
-	padding: 10px 15px;
-	cursor: pointer;
-  text-align: none;
-	}
-	
-	.toggle-button:hover {
-	background-color: #444;
-	}
+		.centerThis {
+			text-align: center;
+		}
+
+		.side-menu .menu-content {
+			padding: 16px;
+			color: white;
+		}
+
+		.main-content {
+			transition: margin-left 0.5s;
+			padding: 16px;
+		}
+
+		.toggle-button {
+			font-size: 20px;
+			margin-top: 0px;
+			margin-left: 0px;
+			background-color: #111;
+			border: none;
+			color: white;
+			padding: 10px 15px;
+			cursor: pointer;
+			text-align: none;
+		}
+
+		.toggle-button:hover {
+			background-color: #444;
+		}
 	</style>
 </head>
 
 <body>
-<div id="sideMenu" class="side-menu">
-	<div class="menu-content">
-		<p>Adjust the settings and start the simulation:</p>
-		<label for="xxChanceInput">Chance for 2x win: </label>
-		<input type="number" id="xxChanceInput" value="40"><br><br>
-		<label for="xxxChanceInput">Chance for 3x win: </label>
-		<input type="number" id="xxxChanceInput" value="15"><br><br>
-		<label for="freqInput">Gambling Frequency: </label>
-		<input type="number" id="freqInput" value="10"><br><br>
-		<label for="payCheckInput">Paycheck: </label>
-		<input type="number" id="payCheckInput" value="10"><br><br>
-    <div class="centerThis">
-    <p>Want to add a bot?</p>
-	  <label for="percentInput">Percent: </label><br>
-    <input id="percentInput" style="text-align:center;" type="number" min="0" max="100" step="0.1" value="50"><br><br>
-    <button onclick="newBot()">Add</button>
-    </div>
-    </div>
+	<div id="sideMenu" class="side-menu">
+		<div class="menu-content">
+			<p>Adjust the settings and start the simulation:</p>
+			<label for="xxChanceInput">Chance for 2x win: </label>
+			<input type="number" id="xxChanceInput" value="40"><br><br>
+			<label for="xxxChanceInput">Chance for 3x win: </label>
+			<input type="number" id="xxxChanceInput" value="15"><br><br>
+			<label for="freqInput">Gambling Frequency: </label>
+			<input type="number" id="freqInput" value="10"><br><br>
+			<label for="payCheckInput">Paycheck: </label>
+			<input type="number" id="payCheckInput" value="10"><br><br>
+			<div class="centerThis">
+				<p>Want to add a bot?</p>
+				<label for="percentInput">Percent: </label><br>
+				<input id="percentInput" style="text-align:center;" type="number" min="0" max="100" step="0.1" value="50"><br><br>
+				<button onclick="newBot()">Add</button>
+			</div>
+		</div>
 	</div>
 	<div id="mainContent" class="main-content">
-	<button id="toggleButton" class="toggle-button">&#9776; Settings</button>
-  <div class="centerThis">
-		<h1>Welcome to the Gambling Simulator!</h1>
-		<button id="startStopButton" onclick="startStopSimulation()">Start</button>
-		<div id="game"></div>
-		<br>
-		<p id="result"></p>
-    </div>
+		<button id="toggleButton" class="toggle-button">&#9776; Settings</button>
+		<div class="centerThis">
+			<h1>Welcome to the BOT Gambling Simulator!</h1>
+			<button id="startStopButton" onclick="startStopSimulation()">Start</button>
+	    <button id="pauseButton" onclick="pauseSimulation()">Pause</button>
+			<div id="game"></div>
+			<br>
+			<p id="result"></p>
+		</div>
 	</div>
 
 	<script src="index.js"></script>
