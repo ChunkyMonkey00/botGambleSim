@@ -10,6 +10,7 @@ Welcome to the Gambling Simulator! This project simulates a gambling scenario wh
 - Set the frequency of gambling
 - Define the paycheck amount for bots
 - Add custom bots with different winning percentages
+- See each bot's score and peak worth
 
 ## Getting Started
   
@@ -20,7 +21,7 @@ Adjust the settings in the side menu:
 - **Paycheck**: Define the amount bots earn at each interval.
 - **Add a Bot**: Enter the percentage chance for a new bot to win and click "Add".
 
-Click the "Start" button to begin the simulation. The bots will start gambling and earning money based on the defined settings. You can stop the simulation at any time by clicking the "Stop" button.
+Click the "Start" button to begin the simulation. The bots will start gambling and earning money based on the defined settings. You can stop the simulation at any time by clicking the "Stop" button, or pause with "Pause".
 
 ---
 
