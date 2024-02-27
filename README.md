@@ -1,4 +1,4 @@
-# Gambling Simulator
+# Bot Gambling Simulator
 
 Play [Here](https://chunkymonkey00.github.io/botGambleSim/)  
   
